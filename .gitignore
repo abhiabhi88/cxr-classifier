@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.DS_Store
+
+# Training artifacts and data (do not commit images or weights)
+*.pt
+*.pth
+*.ckpt
+runs/
+outputs/
+data/
+labels.csv
+*.png
+*.jpg
+*.jpeg
+*.dcm

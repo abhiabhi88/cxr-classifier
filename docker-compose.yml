@@ -1,0 +1,8 @@
+services:
+  train:
+    build: .
+    image: cxr-classifier:latest
+    volumes:
+      - ./data:/data:ro
+      - ./outputs:/outputs
+    command: ["--csv", "/data/labels.csv", "--epochs", "15", "--out", "/outputs/best_model.pt"]
